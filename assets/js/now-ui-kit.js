@@ -149,7 +149,7 @@ nowuiKit = {
             if (!transparent) {
                 transparent = true;
                 $('.navbar[color-on-scroll]').addClass('navbar-transparent');
-                $('#nav-image').attr("src","assets/img/logo2.png");
+                $('#nav-image').attr("src","assets/img/logo-white.png");
             }
         }
     }, 17),
