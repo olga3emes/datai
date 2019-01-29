@@ -1606,7 +1606,7 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
 .show>.btn-primary.dropdown-toggle,
 .show>.btn-primary.dropdown-toggle:focus,
 .show>.btn-primary.dropdown-toggle:hover {
-    background-color: #de4568;
+    background-color: #ee0b00;
     color: #FFFFFF;
     box-shadow: none;
 }
