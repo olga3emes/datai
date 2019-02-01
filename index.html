@@ -199,7 +199,7 @@
 
                 <div class="team">
                     <div class="row">
-                        <div class="col-md-4 ">
+                        <div class="col-md-4 margin-top-40 ">
                             <div class="team-player border-white-solid ">
                                 <img src="assets/img/photos/fede.jpeg"
                                      alt="Thumbnail Image" class=" margin-top-10 rounded-circle img-fluid img-raised"
@@ -223,7 +223,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 ">
+                        <div class="col-md-4 margin-top-40">
                             <div class="team-player border-white-solid ">
                                 <img src="assets/img/photos/carlos.jpg"
                                      alt="Thumbnail Image" class=" margin-top-10 rounded-circle img-fluid img-raised"
@@ -249,7 +249,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 ">
+                        <div class="col-md-4 margin-top-40">
                             <div class="team-player border-white-solid ">
                                 <img src="assets/img/photos/norberto.jpg"
                                      alt="Thumbnail Image" class=" margin-top-10 rounded-circle img-fluid img-raised"
@@ -645,9 +645,9 @@
                         <i class="now-ui-icons location_pin"></i>
                     </div>
                     <div class="description">
-                        <h4>Find us at the office</h4>
+                        <h4>Find us </h4>
 
-                        <p> Building 11, First Floor, Office 16
+                        <p> University Pablo de Olavide
                             <br>Carretera Utrera, Km. 1,
                             <br> Sevilla, 41013
                         </p>
@@ -661,8 +661,8 @@
                     <div class="description">
                         <h4 class="info-title">Give us a ring</h4>
 
-                        <p>+34 95 4977999
-                            <br> +34 95 4977592
+                        <p>+34 606 50 11 51
+
                         </p>
                     </div>
                 </div>
@@ -673,10 +673,34 @@
                     </div>
                     <div class="description">
                         <h4 class="info-title">Send us a message</h4>
+                        <form id="contact_form" action="" method="POST" onsubmit="return validateForm();" enctype="multipart/form-data">
 
-                        <p> cdbargon@upo.es
-                            <br> fdivina@upo.es
-                        </p>
+                        <div class="input-group input-lg">
+                            <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="now-ui-icons users_circle-08"></i>
+                          </span>
+                            </div>
+                            <input type="text" required name="name" class="form-control" placeholder="First Name...">
+                        </div>
+
+                        <div class="input-group input-lg">
+                            <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="now-ui-icons ui-1_email-85"></i>
+                          </span>
+                            </div>
+                            <input type="email" name="email" required class="form-control" placeholder="Email...">
+                        </div>
+
+                        <div class="textarea-container">
+                            <textarea class="form-control" name="message" required  rows="4" cols="80" placeholder="Type a message..."></textarea>
+                        </div>
+
+                        <div class="btn-round">
+                            <input type="submit" value="Send message" required class="btn btn-primary btn-round btn-block btn-lg"/>
+                        </div>
+                        </form>
                     </div>
                 </div>
 
@@ -939,6 +963,8 @@
         marker.setMap(map);
     }
 </script>
+
+
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcFWdzmoIwGZO9xaB48WPjXPMRrteQrDM&callback=myMap"></script>
 
